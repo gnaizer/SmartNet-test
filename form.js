@@ -11,7 +11,9 @@ $(function() {
       data: {
         Fullname: $('#name').val(),
         Email: $('#email').val(),
-        Issues: $('#sel1').val()
+        Issues: $('#sel1').val(),
+        Comment: $('#comment').val(),
+        Photo: $('#background').val()
       },
       dataType: "json"
     });
