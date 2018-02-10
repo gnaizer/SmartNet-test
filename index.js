@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('#btnClear').click(function() {
     if (confirm("Want to clear?")) {
       $('#form1 input[type="text"]').val('');
-      $('#form1 #sel1').val('');
+      $('#form1 #sel1 #comment #background').val('');
     }
   });
 });
