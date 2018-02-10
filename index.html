@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Smart.Net test</h2>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Tab 1</a></li>
+        <li><a data-toggle="tab" href="#menu1">Tab 2</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <h3>Tab 1</h3>
+          <form id="form1" action="javascript:alert( 'Success!' );">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="name" type="text" class="form-control" name="name" placeholder="Name" minlength="5" maxlength="300" pattern="^[a-zA-Z\s]+$" required>
+            </div>
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="email" type="text" class="form-control" name="email" placeholder="Email" pattern="^[\w.+\-]+@gmail\.com$" required>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="sel1">Select list (select one):</label>
+              <select class="form-control" id="sel1" title="Please, check underline list!" required>
+                <option></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+              <br>
+              <input type="submit" id="btnSubmit" value="Submit" />
+              <input type="button" id="btnClear" value="Clear" />
+          </form>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <h3>Tab 2</h3>
+            <form>
+              <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- <script type="text/javascript" src="form.js"></script> -->
+      <script type="text/javascript" src="index.js"></script>
+  </body>
+
+</html>
