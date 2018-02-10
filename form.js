@@ -9,11 +9,12 @@ $(function() {
           url: "https://formspree.io/gntnaizer@gmail.com",
           method: "POST",
           data: { 
-              name: $('#name').val(),
-              email: $('#email').val(),
-              sel1: $('#sel1').val()},
+              Fullname: $('#name').val(),
+              Email: $('#email').val(),
+              Issues: $('#sel1').val()},
           dataType: "json"
       });
   });
 
 });
+
