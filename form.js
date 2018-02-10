@@ -15,8 +15,7 @@ $(function() {
       },
       dataType: "json"
     });
+    alert('Congratulation! Form allready sended');
   });
 });
-
-
 
